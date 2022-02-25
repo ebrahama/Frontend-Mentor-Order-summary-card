@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+ *{
+margin: 0; 
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: var(--Pale-blue);
+    text-decoration: none;
+}
+p{
+    Font-size: 16px
+}
+.card{
+    width: 381px;
+    background: var(--Very-pale-blue);
+    margin: 15% auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.top{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position:relative;
+    top: -33px;
+   
+}
+.text{
+    
+}
+.mid{
+    width: 85%;
+    border-radius: 10px;
+    padding: 10px  20px;
+    background-color: var(--Pale-blue);
+    display: flex;
+    justify-content: space-between;
+
+}
+ .bot1{
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+     width: 100%;
+     height: 100px;
+ }  
+
+.but{
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.bcha{
+    background: transparent;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+}
+.bpr{
+    padding: 10px 80px;
+    background: var(--Bright-blue);
+    color:var(--Very-pale-blue);
+    width: 80%;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.bcan{
+    background: none;
+    color: var(--Desaturated-blue);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.bcan:hover{
+   color:var(--Dark-blue);
+}
+.bpr:hover{
+    background: var(--Desaturated-blue) ;
+ }
+
+@media (min-width:560px) {
+
+    .card{
+        max-width: 450px;
+    }
+  }
+ 
